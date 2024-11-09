@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Water Quality Prediction</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styles */
+        body {
+            background-image: linear-gradient(white,rgb(39, 39, 216));
+    
+            background-position: center;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+    
+        /* Header styles */
+        header {
+        
+            background-image: linear-gradient(blue,white);
+            background-position: center;
+            background-size: cover;
+            color: #f2f5fa;
+            padding: 1rem;
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+        
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1a0c0c;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-transform: uppercase;
+        }
+
+.btn:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+    transform: translateY(-2px); /* Slight vertical movement on hover */
+}
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 4rem;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">River Water Quality</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="water_predict.html">Predict</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="hero">
+            <h1>Monitor and Predict River Water Quality</h1>
+            <p>Our advanced algorithms help you stay informed about the health of your local rivers.</p>
+            <a href="water_predict.html" class="btn">Get Started</a>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="icon1.png" alt="Feature 1">
+                <h3>Real-time Monitoring</h3>
+                <p>Get up-to-date information on water quality parameters.</p>
+            </div>
+            <div class="feature">
+                <img src="icon2.png" alt="Feature 2">
+                <h3>Predictive Analytics</h3>
+                <p>Predict future water quality conditions based on historical data.</p>
+            </div>
+            <div class="feature">
+                <img src="icon3.png" alt="Feature 3">
+                <h3>User-friendly Interface</h3>
+                <p>Easily access and interpret water quality data.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 River Water Quality Prediction</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Water Quality Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url("{{ url_for('static', filename='water1.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 2em;
+            width: 100%;
+        }
+        .form-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            max-width: 350px;
+            width: 100%;
+        }
+        .form-card h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-card form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-card label {
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        .form-card input {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-card button {
+            padding: 0.5em;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        River Water Quality Prediction
+    </div>
+    <div class="form-card">
+        <h2>Water Quality Predictor</h2>
+        <form action="/predict" method="post">
+            <label for="ph">PH:</label>
+            <input type="text" id="ph" name="ph">
+            <label for="hardness">Hardness:</label>
+            <input type="text" id="hardness" name="hardness">
+            <label for="solids">Solids:</label>
+            <input type="text" id="solids" name="solids">
+            <label for="chloramines">Chloramines:</label>
+            <input type="text" id="chloramines" name="chloramines">
+            <label for="sulfate">Sulfate:</label>
+            <input type="text" id="sulfate" name="sulfate">
+            <label for="conductivity">Conductivity:</label>
+            <input type="text" id="conductivity" name="conductivity">
+            <label for="organic_carbon">Organic Carbon:</label>
+            <input type="text" id="organic_carbon" name="organic_carbon">
+            <label for="trihalomethanes">Trihalomethanes:</label>
+            <input type="text" id="trihalomethanes" name="trihalomethanes">
+            <label for="turbidity">Turbidity:</label>
+            <input type="text" id="turbidity" name="turbidity">
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
+
